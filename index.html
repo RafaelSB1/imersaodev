@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Projetando Reatores</title>
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1>Projetando Reatores</h1>
+            <input type="text" placeholder="Pesquisa" id="barra_de_pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div class="item-resultado">
+                <h2>Sua ferramenta de excelência em engenharia química</h2>
+                <p class="descricao-meta">Projetando Reatores é uma ferramenta web desenvolvida para complementar o ensino dos cálculos por trás dos reatores químicos</p>
+            </div>
+        </section>
+        <section>
+            <h3>Explore os Exemplos</h3>
+            <p>Adaptação dos problemas contidos no livro “Elementos de Engenharia das Reações Químicas” de H. Scott Fogler, uma bibliografia clássica relativa a projeto de reatores</p>
+        </section>
+        <section>
+        <div class="topicos">
+            <button onclick="mostrar_dados_reator('PFR')">PFR</button>
+            <button onclick="mostrar_dados_reator('CSTR')">CSTR</button>
+            <button onclick="mostrar_dados_reator('Batelada')">Batelada</button>
+            <button onclick="mostrar_dados_reator('PBR')">PBR</button>
+        </div></section>
+        <section>
+            <div class="reatores" id="secao_reatores"></div>
+        </section>
+    </main>
+    <footer>
+        <p>2024 - Meu site</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
